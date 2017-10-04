@@ -1,17 +1,21 @@
 @import "0-tools/bourbon/_bourbon";
 @import "0-tools/normalize";
-@import "1-base/vars";
-@import "1-base/base";
 
-@import "3-layouts/mixins/flexbox";
-@import "3-layouts/mixins/columns";
-@import "3-layouts/variables";
-@import "3-layouts/elements";
+@import "1-base/vars";
+@import "1-base/variables";
+@import "1-base/base";
+@import "1-base/mixins/flexbox";
+@import "1-base/mixins/columns";
+
+@import "2-modules/elements";
+@import "2-modules/staff";
+
+@import "2-modules/forms";
+
+
 @import "3-layouts/landing-page";
 @import "3-layouts/layout";
-@import "3-layouts/staff";
 @import "3-layouts/contact";
 @import "3-layouts/blog";
-@import "3-layouts/forms";
 @import "3-layouts/navigation";
 @import "3-layouts/footer";

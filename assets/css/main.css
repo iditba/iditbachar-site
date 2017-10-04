@@ -528,6 +528,92 @@ p, address, ul {
   line-height: 1.6em;
   font-family: 'Lato', sans-serif; }
 
+.staff {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  text-align: center; }
+  .staff li {
+    padding: 30px 20px;
+    box-sizing: border-box;
+    width: 100%; }
+    @media (min-width: 450px) {
+      .staff li {
+        -moz-flex: 1 1 50%;
+        -ms-flex: 1 1 50%;
+        flex: 1 1 50%; } }
+    @media (min-width: 768px) {
+      .staff li {
+        -moz-flex: 1 1 33%;
+        -ms-flex: 1 1 33%;
+        flex: 1 1 33%; } }
+  .staff .name {
+    margin-top: 20px; }
+  .staff .position {
+    color: #666;
+    font-size: .8em; }
+
+.button a, input[type=submit] {
+  color: #6ba1f3;
+  text-decoration: none;
+  border: 2px solid #6ba1f3;
+  transition: .2s ease-in-out;
+  display: inline-block;
+  padding: 16px 50px;
+  background: #fff; }
+
+.button a:hover, input[type=submit]:hover {
+  background: #6ba1f3;
+  color: #fff;
+  cursor: pointer; }
+
+.button.alt a {
+  background: rgba(255, 255, 255, 0);
+  border: 2px solid white;
+  color: #fff; }
+
+.button.alt a:hover {
+  background: #fff;
+  color: #6ba1f3;
+  text-shadow: none; }
+
+textarea, input, button, select {
+  font-family: inherit;
+  font-size: inherit; }
+
+input[type=submit] {
+  margin: 20px 0 0 0; }
+
+label, input, textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box; }
+
+textarea {
+  resize: vertical;
+  height: 150px; }
+
+label {
+  margin: 20px 0 5px 0; }
+
+input, textarea {
+  padding: 10px;
+  font-size: 1em; }
+
+input, textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #DDDDDD; }
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
+  box-shadow: 0 0 5px #51cbee;
+  border: 1px solid #51cbee; }
+
 .hero {
   color: #ffffff;
   text-align: center;
@@ -539,12 +625,13 @@ p, address, ul {
   background-position: center center; }
   .hero:before {
     content: "";
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0, transparent 100%);
+    background: linear-gradient(to bottom, rgba(196, 171, 134, 0.7) 0, transparent 100%);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 300px; }
+    height: 300px;
+    mix-blend-mode: color; }
   .hero p {
     color: #fff; }
   .hero .inner-hero {
@@ -750,33 +837,6 @@ blockquote:before {
 .cms-editor-active .editor-link {
   display: block; }
 
-.staff {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  -ms-flex-flow: wrap;
-  flex-flow: wrap;
-  text-align: center; }
-  .staff li {
-    padding: 30px 20px;
-    box-sizing: border-box;
-    width: 100%; }
-    @media (min-width: 450px) {
-      .staff li {
-        -moz-flex: 1 1 50%;
-        -ms-flex: 1 1 50%;
-        flex: 1 1 50%; } }
-    @media (min-width: 768px) {
-      .staff li {
-        -moz-flex: 1 1 33%;
-        -ms-flex: 1 1 33%;
-        flex: 1 1 33%; } }
-  .staff .name {
-    margin-top: 20px; }
-  .staff .position {
-    color: #666;
-    font-size: .8em; }
-
 .map {
   width: 100%;
   height: 440px; }
@@ -902,65 +962,6 @@ blockquote:before {
 
 .pagination {
   padding: 30px; }
-
-.button a, input[type=submit] {
-  color: #6ba1f3;
-  text-decoration: none;
-  border: 2px solid #6ba1f3;
-  transition: .2s ease-in-out;
-  display: inline-block;
-  padding: 16px 50px;
-  background: #fff; }
-
-.button a:hover, input[type=submit]:hover {
-  background: #6ba1f3;
-  color: #fff;
-  cursor: pointer; }
-
-.button.alt a {
-  background: rgba(255, 255, 255, 0);
-  border: 2px solid white;
-  color: #fff; }
-
-.button.alt a:hover {
-  background: #fff;
-  color: #6ba1f3;
-  text-shadow: none; }
-
-textarea, input, button, select {
-  font-family: inherit;
-  font-size: inherit; }
-
-input[type=submit] {
-  margin: 20px 0 0 0; }
-
-label, input, textarea {
-  display: block;
-  width: 100%;
-  box-sizing: border-box; }
-
-textarea {
-  resize: vertical;
-  height: 150px; }
-
-label {
-  margin: 20px 0 5px 0; }
-
-input, textarea {
-  padding: 10px;
-  font-size: 1em; }
-
-input, textarea {
-  -webkit-transition: all 0.30s ease-in-out;
-  -moz-transition: all 0.30s ease-in-out;
-  -ms-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out;
-  outline: none;
-  border: 1px solid #DDDDDD; }
-
-input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
-  box-shadow: 0 0 5px #51cbee;
-  border: 1px solid #51cbee; }
 
 .nav-open nav {
   border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
