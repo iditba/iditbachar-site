@@ -10,7 +10,8 @@ welcome-button-link: contact
 
 about-me-title: עידית בכר
 about-me-text: מטפלת בקלינקה פרטית בשיאצו ובדיקור באיזור נעים ורגוע המשך טקסט ימולא ע״י הלקוח
-about-me-picture-name: https://dl.dropboxusercontent.com/s/ts23mlj69ptjxj3/home-start-bg.jpg?dl=0
+about-me-picture-name: https://dl.dropboxusercontent.com/s/7sanfhinpgzmh5v/me-650x1300.jpg?dl=0
+about-me-picture-alt-name: IDIT BACHAR
 
 bottom_image: https://unsplash.it/2000/1322?a=.png
 ---
@@ -18,10 +19,9 @@ bottom_image: https://unsplash.it/2000/1322?a=.png
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h2>bbbbb{{ page.about-me-title }}</h2>
-			<h1 class="editable">{% include relative-src.html src=page.welcome-title %}</h1>
-			<p class="subtext editable">{% include relative-src.html src=page.welcome-sub-title %}</p>
-			<div class="cta button alt"><a href="{{ site.baseurl }}/{% include relative-src.html src=page.welcome-button-link %}">{% include relative-src.html src=page.welcome-button-name %}</a></div>
+			<h1 class="editable">{{ page.welcome-title }}</h1>
+			<p class="subtext editable">{{ page.welcome-sub-title }}</p>
+			<div class="cta button alt"><a href="{{ site.baseurl }}/{{ page.welcome-button-link }}">{{ page.welcome-button-name }}</a></div>
 		</div>
 	</div>
 	<div class="learn-more"><a href="#learn-more">Learn more <span class="arrow">&#x25BC;</span></a></div>
@@ -31,11 +31,11 @@ bottom_image: https://unsplash.it/2000/1322?a=.png
 	<section class="info" id="learn-more">
 		<div class="container flex">
 			<div class="text">
-				<h2 class="editable">{% include relative-src.html src=page.about-me-title %}</h2>
-				<p class="editable">{% include relative-src.html src=page.about-me-text %}</p>
+				<h2 class="editable">{{ page.about-me-title }}</h2>
+				<p class="editable">{{ page.about-me-text }}</p>
 			</div>
 			<div class="image">
-				<img class="editable" src="{% include relative-src.html src=page.about-me-picture-name %}" alt="Screenshot" />
+				<img class="editable" src="{{ page.about-me-picture-name }}" alt="{{ page.about-me-picture-alt-name }}" />
 			</div>
 		</div>
 	</section>
