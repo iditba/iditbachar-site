@@ -18,9 +18,10 @@ bottom_image: https://unsplash.it/2000/1322?a=.png
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
+			<h2>bbbbb{{ page.about-me-title }}</h2>
 			<h1 class="editable">{% include relative-src.html src=page.welcome-title %}</h1>
 			<p class="subtext editable">{% include relative-src.html src=page.welcome-sub-title %}</p>
-			<div class="cta button alt"><a href="{{ site.baseurl }}{% include relative-src.html src=page.welcome-button-link %}">{% include relative-src.html src=page.welcome-button-name %}</a></div>
+			<div class="cta button alt"><a href="{{ site.baseurl }}/{% include relative-src.html src=page.welcome-button-link %}">{% include relative-src.html src=page.welcome-button-name %}</a></div>
 		</div>
 	</div>
 	<div class="learn-more"><a href="#learn-more">Learn more <span class="arrow">&#x25BC;</span></a></div>
