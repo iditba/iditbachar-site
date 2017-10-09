@@ -1,0 +1,14 @@
+---
+title: תמונות מהקליניקה בעמוד ראשי
+date: 2017-10-09
+description: תמונות מהקליניקה
+categories: home-items
+image: https://source.unsplash.com/collection/375719/2000x1322?a=.png
+author_staff_member:
+---
+
+![Checkmate](https://dl.dropboxusercontent.com/s/zontv1do6ls68pd/slider-items01.jpg?dl=0)
+
+![Raspberries](https://dl.dropboxusercontent.com/s/qszhi534mvta2ro/slider-items02.jpg?dl=0)
+
+![Raspberries](https://dl.dropboxusercontent.com/s/5ug6idx37ylugh8/slider-items03.jpg?dl=0)
