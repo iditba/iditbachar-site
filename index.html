@@ -40,6 +40,18 @@ bottom_image: https://unsplash.it/2000/1322?a=.png
 		</div>
 	</section>
 
+
+
+
+	<section class="info">
+		{% for home-slider-clinic in site.categories.home-clinic %}
+			<div class="fade">
+				{{home-slider-clinic.content}}
+			</div>
+
+		{% endfor %}
+	</section>
+
 	<section class="info">
 		<div class="container flex">
 			<div class="text">

@@ -35,3 +35,16 @@
 		}, 500);
 	});
 })();
+
+// slick slider tuch-ups--------------------------------------------
+
+$(document).ready(function(){
+	$('.fade').slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 500,
+	  fade: true,
+		autoplay: true,
+	  cssEase: 'linear'
+	});
+});
