@@ -8,8 +8,8 @@ exclude: ["node_modules", "gulpfile.js", "package.json"]
 # Site
 
 title: IDIT BACHAR
-url: "https://brave-submarine.cloudvent.net"
-baseurl: 
+url: "http://loragil.com"
+baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:

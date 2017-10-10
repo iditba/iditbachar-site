@@ -1,9 +1,11 @@
 section
+  &.hero
+    background-color: #EFE7F0
   .flex
     @media (min-width: 768px)
       flex-wrap: wrap
       justify-content: center
-      
+
     .home-content-slider
       max-width: 650px
       width: 100%
@@ -14,3 +16,34 @@ section
 
         img
           margin: auto
+
+.hero.last-hero
+  bottom: -50px
+  position: relative
+  background-position: center bottom
+
+footer.home-footer
+  overflow: hidden
+  background: rgba(193, 163, 128, 0.55)
+
+  &::before
+    background-image: url(https://dl.dropboxusercontent.com/s/ty1t29zfyhid0y4/home-footer.jpg?dl=0)
+    background-position: bottom
+    position: absolute
+    content: ''
+    height: 100vh
+    width: 100%
+    -webkit-filter: blur(3px)
+    filter: blur(5px)
+    background-size: cover
+    bottom: 0
+    mix-blend-mode: screen
+
+  a
+
+    color: #8b5133
+    font-weight: bold
+    text-transform: uppercase
+
+    svg
+      fill: #8b5133

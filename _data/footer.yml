@@ -1,13 +1,11 @@
 left_links:
-  - name: Blog
+  - name: בלוג
     link: /blog/
-  - name: About
-    link: /about/
-  - name: Contact
+  - name: צור קשר
     link: /contact/
 right_links:
   - name:
-    link: https://facebook.com/
+    link: https://www.facebook.com/iditsinit/
     new_window: true
     social_icon: Facebook
   - name:

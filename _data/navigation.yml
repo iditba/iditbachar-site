@@ -1,6 +1,4 @@
-- name: Blog
+- name: בלוג
   link: /blog/
-- name: About
-  link: /about/
-- name: Contact
+- name: צור קשר
   link: /contact/

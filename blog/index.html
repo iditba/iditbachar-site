@@ -1,7 +1,9 @@
 ---
 title: Blog
 description: Keep up with the latest news.
-image: https://source.unsplash.com/MqJX_8EaStM/2000x1322?a=.png
+
+image: https://dl.dropboxusercontent.com/s/6ppik0xrxpfvolz/blog-bg.jpg?dl=0
+
 ---
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
@@ -18,6 +20,7 @@ image: https://source.unsplash.com/MqJX_8EaStM/2000x1322?a=.png
 		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Post</a></p>
 		<ul class="blog-posts">
 			{% include list-posts.html posts=paginator.posts %}
+
 		</ul>
 
 		{% if paginator.total_pages > 1 %}

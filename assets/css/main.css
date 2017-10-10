@@ -841,6 +841,9 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
   box-shadow: 0 0 5px #51cbee;
   border: 1px solid #51cbee; }
 
+section.hero {
+  background-color: #EFE7F0; }
+
 @media (min-width: 768px) {
   section .flex {
     -ms-flex-wrap: wrap;
@@ -856,6 +859,33 @@ section .flex .home-content-slider {
     text-align: center; }
     section .flex .home-content-slider p img {
       margin: auto; }
+
+.hero.last-hero {
+  bottom: -50px;
+  position: relative;
+  background-position: center bottom; }
+
+footer.home-footer {
+  overflow: hidden;
+  background: rgba(193, 163, 128, 0.55); }
+  footer.home-footer::before {
+    background-image: url(https://dl.dropboxusercontent.com/s/ty1t29zfyhid0y4/home-footer.jpg?dl=0);
+    background-position: bottom;
+    position: absolute;
+    content: '';
+    height: 100vh;
+    width: 100%;
+    -webkit-filter: blur(3px);
+    filter: blur(5px);
+    background-size: cover;
+    bottom: 0;
+    mix-blend-mode: screen; }
+  footer.home-footer a {
+    color: #8b5133;
+    font-weight: bold;
+    text-transform: uppercase; }
+    footer.home-footer a svg {
+      fill: #8b5133; }
 
 .hero {
   color: #ffffff;
