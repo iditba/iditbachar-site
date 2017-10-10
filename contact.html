@@ -1,10 +1,15 @@
 ---
-title: Contact
-description: Send us a message to find out more!
+title: צור קשר
+description: יש שאלות? נשמח לענות!
+
+welcome-title: יצירת קשר בקליק
+welcome-sub-title: אם יש לך שאלות אנו זמינים לך בכל עת דרך הטופס בעמוד או בטלפון בשעות היום
+welcome-button-name: יצירת קשר בקליק
+
 map:
-  latitude: -45.8787605
-  longitude: 170.5027976
-  address: "1 George Street, Dunedin, New Zealand"
+  latitude: 32.1317785
+  longitude: 34.8412175
+  address: "הדר 47455, רמת השרון, ישראל"
   zoom: 13
 image: https://source.unsplash.com/WNAO036c6FM/2000x1322?a=.png
 ---
@@ -12,36 +17,37 @@ image: https://source.unsplash.com/WNAO036c6FM/2000x1322?a=.png
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1 class="editable">Get in touch today</h1>
-			<p class="subtext editable">If you have any questions or queries send us a message and we'll get back to you as soon as we can.</p>
+			<h1 class="editable">{{ page.welcome-title }}</h1>
+			<p class="subtext editable">{{ page.welcome-sub-title }}</p>
+      <div class="cta button alt"><a href="#contact-me">{{ page.welcome-button-name }}</a></div>
 		</div>
 	</div>
 </section>
 
-<section class="pad">
+<section class="pad" id="contact-me">
 	<div class="text-container contact-box">
-		<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
-			<input type="hidden" name="_to" value="support@cloudcannon.com">
+		<form action="http://formspree.io/hezi.bd@gmail.com" method="post" class="contact-form">
+      <input type="hidden" name="_next" value="{{ site.baseurl }}/contact-success/" />
 			<input type="text" name="_gotcha" style="display: none;">
 
-			<label for="name">Name</label>
-			<input type="text" name="name" id="name" placeholder="Enter your name...">
+			<label for="name">שם מלא</label>
+			<input type="text" name="name" id="name" placeholder="לדוג׳ ישראל ישראלי">
+      <input type="hidden" name="_subject" value="New submission!" />
+			<label for="email">כתובת דוא״ל</label>
+			<input type="email" name="email" id="email" placeholder="me@send.com לדוג׳" required>
 
-			<label for="email">Email Address</label>
-			<input type="email" name="email" id="email" placeholder="Enter your email..." required>
+			<label for="message">מה ברצונך לשאול?</label>
+			<textarea name="message" id="message" placeholder="איזור כתיבת ההודעה..."></textarea>
 
-			<label for="message">Message</label>
-			<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
-
-			<input type="submit" value="Send Message">
+			<input type="submit" value="שליחה">
 		</form>
 
 		<div class="contact-details">
-			<h3>Address</h3>
+			<h3>כתובת</h3>
 			<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
 
-			<h3>Email</h3>
-			<p class="editable"><a href="mailto:support@example.com">support@example.com</a></p>
+			<h3>דוא״ל</h3>
+			<p class="editable"><a href="mailto:bachar.idit@gmail.com">bachar.idit@gmail.com</a></p>
 		</div>
 	</div>
 </section>
