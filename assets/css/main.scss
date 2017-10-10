@@ -1,12 +1,10 @@
 @import "0-tools/bourbon/_bourbon";
 @import "0-tools/normalize";
-@import "1-base/_vars";
-@import "1-base/variables";
 @import "0-tools/slick/slick";
 @import "0-tools/slick/slick-theme";
-@import "0-tools/loragil-slick";
 
-
+@import "1-base/vars";
+@import "1-base/variables";
 @import "1-base/base";
 @import "1-base/mixins/flexbox";
 @import "1-base/mixins/columns";
@@ -16,7 +14,7 @@
 
 @import "2-modules/forms";
 
-@import "3-layouts/home";
+
 @import "3-layouts/landing-page";
 @import "3-layouts/layout";
 @import "3-layouts/contact";
