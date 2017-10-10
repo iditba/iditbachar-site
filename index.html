@@ -15,7 +15,6 @@ about-me-text: מטפלת בקלינקה פרטית בשיאצו ובדיקור 
 about-me-picture-name: https://dl.dropboxusercontent.com/s/7sanfhinpgzmh5v/me-650x1300.jpg?dl=0
 about-me-picture-alt-name: IDIT BACHAR
 
-<<<<<<< HEAD
 clinic-title: הקליניקה
 clinic-sub-title: ממוקמת באיזור שקט ונעים, חניה חופשית. יש להזין טקסט נוסף כאן.
 
@@ -24,9 +23,6 @@ items-sub-title: תוכן להזנה על הכלים שברשות הקליניק
 
 bottom_image: https://dl.dropboxusercontent.com/s/ty1t29zfyhid0y4/home-footer.jpg?dl=0
 footer-bg-class: home-footer
-=======
-bottom_image: https://unsplash.it/2000/1322?a=.png
->>>>>>> parent of 5db9699... content update home
 ---
 
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
@@ -53,51 +49,27 @@ bottom_image: https://unsplash.it/2000/1322?a=.png
 		</div>
 	</section>
 
-
-
-
-	<section class="info">
-		{% for home-slider-clinic in site.categories.home-clinic %}
-			<div class="fade">
-				{{home-slider-clinic.content}}
-			</div>
-
-		{% endfor %}
-	</section>
-
 	<section class="info">
 		<div class="container flex">
 			<div class="text">
-				<h2 class="editable">Pick your interests</h2>
-				<p class="editable">The more you tell Frisco the better it gets to know you. Frisco matches you with people who share similar interests with you.</p>
+				<h2 class="editable">{{ page.clinic-title }}</h2>
+				<p class="editable">{{ page.clinic-sub-title }}</p>
 			</div>
-			<div class="image">
-				<img class="editable" src="http://placehold.it/650x1300" alt="Screenshot" />
-			</div>
-<<<<<<< HEAD
 			<div class="fade home-content-slider">
 				{% include home/home-welcome.html %}
 			</div>
-=======
->>>>>>> parent of 5db9699... content update home
 		</div>
 	</section>
 
 	<section class="info">
 		<div class="container flex">
 			<div class="text">
-				<h2 class="editable">Swipe and go</h2>
-				<p class="editable">Frisco shows you cards with people who might be a good match for friendship. Swipe left to move to the next card or right to start talking.</p>
+				<h2 class="editable">{{ page.items-title }}</h2>
+				<p class="editable">{{ page.items-sub-title }}</p>
 			</div>
-			<div class="image">
-				<img class="editable" src="http://placehold.it/650x1300" alt="Screenshot" />
-			</div>
-<<<<<<< HEAD
 			<div class="fade home-content-slider">
 				{% include home/home-clinic-content.html %}
 			</div>
-=======
->>>>>>> parent of 5db9699... content update home
 		</div>
 	</section>
 
