@@ -867,7 +867,8 @@ section .flex .home-content-slider {
 
 footer.home-footer {
   overflow: hidden;
-  background: rgba(193, 163, 128, 0.55); }
+  background: rgba(193, 163, 128, 0.55);
+  direction: rtl; }
   footer.home-footer::before {
     background-image: url(https://dl.dropboxusercontent.com/s/ty1t29zfyhid0y4/home-footer.jpg?dl=0);
     background-position: bottom;
@@ -886,6 +887,66 @@ footer.home-footer {
     text-transform: uppercase; }
     footer.home-footer a svg {
       fill: #8b5133; }
+  footer.home-footer .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    footer.home-footer .container > * {
+      -ms-flex: 1 1;
+          flex: 1 1; }
+    footer.home-footer .container p.copyright {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; }
+    footer.home-footer .container form.contact-form {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      background: #d5c1b2;
+      width: 100%;
+      padding: 10px;
+      background-blend-mode: multiply;
+      font-size: 12px;
+      font-weight: bold;
+      color: #000; }
+      footer.home-footer .container form.contact-form .form-input {
+        -ms-flex: 1 1 33.3%;
+            flex: 1 1 33.3%; }
+        footer.home-footer .container form.contact-form .form-input label {
+          padding-right: 10px; }
+      footer.home-footer .container form.contact-form .massage-box {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex: 1 1 calc(100% - 50px);
+            flex: 1 1 calc(100% - 50px);
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+      footer.home-footer .container form.contact-form textarea#message {
+        height: 100px; }
+      footer.home-footer .container form.contact-form .send-butt {
+        -ms-flex-preferred-size: 50px;
+            flex-basis: 50px;
+        width: 50px;
+        -ms-flex: 1 1 50px !important;
+            flex: 1 1 50px !important;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+        footer.home-footer .container form.contact-form .send-butt input[type="submit"] {
+          width: 50px;
+          box-sizing: border-box;
+          padding: 10px;
+          height: calc(100% - 43px); }
 
 .hero {
   color: #ffffff;

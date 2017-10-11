@@ -25,6 +25,7 @@ section
 footer.home-footer
   overflow: hidden
   background: rgba(193, 163, 128, 0.55)
+  direction: rtl
 
   &::before
     background-image: url(https://dl.dropboxusercontent.com/s/ty1t29zfyhid0y4/home-footer.jpg?dl=0)
@@ -47,3 +48,65 @@ footer.home-footer
 
     svg
       fill: #8b5133
+
+  .container
+    display: flex
+    flex-wrap: wrap
+
+
+    &>*
+      flex: 1 1
+
+
+    p.copyright
+      flex-basis: 100%
+
+
+    form.contact-form
+      display: flex
+      flex-wrap: wrap
+      background: rgb(213, 193, 178)
+      width: 100%
+      padding: 10px
+      background-blend-mode: multiply
+      font-size: 12px
+      font-weight: bold
+      color: #000
+
+      .form-input
+        flex: 1 1 33.3%
+        label
+          padding-right: 10px
+
+
+      .massage-box
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        flex: 1 1 calc(100% - 50px)
+        align-items: stretch
+
+
+
+
+      textarea#message
+        height: 100px
+
+
+
+
+      .send-butt
+        flex-basis: 50px
+        width: 50px
+        flex: 1 1 50px !important
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        justify-content: flex-end
+
+
+        input[type="submit"]
+          width: 50px
+          box-sizing: border-box
+          padding: 10px
+          height: calc(100% - 43px)

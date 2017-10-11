@@ -26,21 +26,12 @@ image: https://source.unsplash.com/WNAO036c6FM/2000x1322?a=.png
 
 <section class="pad" id="contact-me">
 	<div class="text-container contact-box">
-		<form action="http://formspree.io/hezi.bd@gmail.com" method="post" class="contact-form">
-      <input type="hidden" name="_next" value="{{ site.baseurl }}/contact-success/" />
-			<input type="text" name="_gotcha" style="display: none;">
 
-			<label for="name">שם מלא</label>
-			<input type="text" name="name" id="name" placeholder="לדוג׳ ישראל ישראלי">
-      <input type="hidden" name="_subject" value="New submission!" />
-			<label for="email">כתובת דוא״ל</label>
-			<input type="email" name="email" id="email" placeholder="me@send.com לדוג׳" required>
+    <!-- contact-form- -->
 
-			<label for="message">מה ברצונך לשאול?</label>
-			<textarea name="message" id="message" placeholder="איזור כתיבת ההודעה..."></textarea>
+    {% include contact-form.html %}
 
-			<input type="submit" value="שליחה">
-		</form>
+    <!-- contact-form- -->
 
 		<div class="contact-details">
 			<h3>כתובת</h3>
