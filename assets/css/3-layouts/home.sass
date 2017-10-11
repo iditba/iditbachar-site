@@ -18,14 +18,18 @@ section
           margin: auto
 
 .hero.last-hero
-  bottom: -50px
+  margin-bottom: -150px
   position: relative
   background-position: center bottom
+
+  &::before
+    background: transparent
 
 footer.home-footer
   overflow: hidden
   background: rgba(193, 163, 128, 0.55)
   direction: rtl
+  box-shadow: inset 0 -53px 0 #333
 
   &::before
     background-image: url(https://dl.dropboxusercontent.com/s/ty1t29zfyhid0y4/home-footer.jpg?dl=0)
@@ -39,6 +43,16 @@ footer.home-footer
     background-size: cover
     bottom: 0
     mix-blend-mode: screen
+    z-index: 0
+
+  &::after
+    background: #ffe8d1
+    position: absolute
+    content: ''
+    width: 100%
+    height: 55px
+    bottom: 0
+    z-index: 1
 
   a
 
@@ -52,6 +66,14 @@ footer.home-footer
   .container
     display: flex
     flex-wrap: wrap
+    position: relative
+    z-index: 10
+
+    .footer-right-links
+      order: 1
+
+    .footer-left-links
+      display: none
 
 
     &>*
@@ -59,52 +81,92 @@ footer.home-footer
 
 
     p.copyright
-      flex-basis: 100%
+      order: 3
+      text-align: left
 
 
     form.contact-form
       display: flex
       flex-wrap: wrap
-      background: rgba(213, 193, 178, 0.5)
+      //background: rgba(213, 193, 178, 0.5)
       width: 100%
       padding: 10px
       background-blend-mode: multiply
       font-size: 12px
       font-weight: bold
       color: #000
+      padding: 10px 4px
+      flex-basis: 100%
 
       .form-title
         width: 100%
         margin: 0
-        margin-top: 4px
+        //margin-top: 4px
         margin-right: 5px
+        margin-bottom: 15px
+        text-align: center
+        color: #fff
+        letter-spacing: 3px
+
+
+      .form-box
+        flex: 1
+        padding: 0 5px
+
+        &:last-child
+          display: flex
+          flex: 2
+          flex-wrap: wrap
+
+        &.form-input:first-child
+          margin-bottom: 0px
 
 
       .form-input
         flex: 1 1 33.3%
+        display: flex
+        flex-wrap: wrap
+
+        &.short-info
+          margin-bottom: 10px
+
+        &>*
+          flex: 1
+
+
+        &>label
+          margin-top: 10px !important
+
+        &>*:last-child
+          flex: 3
+          margin-top: 0
         label
           padding-right: 10px
+
 
 
       .massage-box
         display: flex
         flex-direction: column
         flex-wrap: wrap
-        flex: 1 1 calc(100% - 50px)
+        flex: 1 1 calc(100% - 211px)
         align-items: stretch
+
+        label
+          display: none
 
 
 
 
       textarea#message
-        height: 100px
+        height: 92px
 
 
 
 
       .send-butt
-        flex-basis: 50px
-        width: 50px
+        //flex-basis: 50px
+        //width: 50px
         flex: 1 1 50px !important
         display: flex
         flex-wrap: wrap
@@ -113,7 +175,7 @@ footer.home-footer
 
 
         input[type="submit"]
-          width: 50px
+          width: 100%
           box-sizing: border-box
           padding: 10px
           height: calc(100% - 43px)
