@@ -861,7 +861,7 @@ section .flex .home-content-slider {
       margin: auto; }
 
 .hero.last-hero {
-  margin-bottom: -150px;
+  margin-bottom: -190px;
   position: relative;
   background-position: center bottom; }
   .hero.last-hero::before {
@@ -931,12 +931,13 @@ footer.home-footer {
       color: #000;
       padding: 10px 4px;
       -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; }
+          flex-basis: 100%;
+      margin-bottom: 10px; }
       footer.home-footer .container form.contact-form .form-title {
         width: 100%;
         margin: 0;
         margin-right: 5px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         text-align: center;
         color: #fff;
         letter-spacing: 3px; }
@@ -1003,7 +1004,14 @@ footer.home-footer {
           width: 100%;
           box-sizing: border-box;
           padding: 10px;
-          height: calc(100% - 43px); }
+          height: calc(100% - 43px);
+          font-size: 20px;
+          color: #8b5235;
+          border: 2px solid #b6a18c;
+          background: #e6c19d; }
+          footer.home-footer .container form.contact-form .send-butt input[type="submit"]:hover {
+            background: #894e33;
+            color: #fff; }
 
 .hero {
   color: #ffffff;
