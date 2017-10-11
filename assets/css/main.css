@@ -903,13 +903,18 @@ footer.home-footer {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      background: #d5c1b2;
+      background: rgba(213, 193, 178, 0.5);
       width: 100%;
       padding: 10px;
       background-blend-mode: multiply;
       font-size: 12px;
       font-weight: bold;
       color: #000; }
+      footer.home-footer .container form.contact-form .form-title {
+        width: 100%;
+        margin: 0;
+        margin-top: 4px;
+        margin-right: 5px; }
       footer.home-footer .container form.contact-form .form-input {
         -ms-flex: 1 1 33.3%;
             flex: 1 1 33.3%; }
