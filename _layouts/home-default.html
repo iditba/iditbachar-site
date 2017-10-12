@@ -54,7 +54,7 @@ contact-details:
 
 		<footer class="{{page.footer-bg-class}}">
 			<div class="container">
-				
+
 				<ul class="footer-left-links">
 					{% for link in site.data.footer.left_links %}
 						<li>
@@ -74,6 +74,13 @@ contact-details:
 							</a>
 						</li>
 					{% endfor %}
+          {% for link in site.data.footer.phone_link %}
+						<li>
+							<a class="footer-phone-link" {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon | slugify }}-icon"{% endif %}>
+								{{ link.name }}
+							</a>
+						</li>
+					{% endfor %}
 				</ul>
 
 
@@ -86,12 +93,15 @@ contact-details:
 
 
 
-
-				<p class="copyright">
-					<a href="http://loragil.com">
-						LORAGIL בנייה ועיצוב
-					</a>
-				</p>
+        <div class="copyright">
+          <a href="http://loragil.com">
+            <p>בנייה ועיצוב לא רגיל</p>
+            <hr>
+            <div class="footer-logo-name">
+              {% include icons/loragil-logo.html %}oragil.com
+            </div>
+          </a>
+        </div>
 
 
 
