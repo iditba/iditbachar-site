@@ -1,4 +1,6 @@
+- name: ראשי
+  link: /
 - name: בלוג
   link: /blog/
 - name: צור קשר
-  link: /index#footer
+  link: /#footer

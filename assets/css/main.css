@@ -848,16 +848,20 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
   border: 1px solid #51cbee; }
 
 header#mainHeader {
-  overflow: hidden;
-  padding: 44px 0px; }
+  padding: 34px 0px 15px; }
   header#mainHeader .company-name {
     display: none; }
+  header#mainHeader nav {
+    font-size: 25px; }
   @media (min-width: 640px) {
-    header#mainHeader nav {
-      background-color: rgba(112, 94, 65, 0.75);
-      padding: 28px 20px;
-      font-size: 18px;
-      mix-blend-mode: multiply; } }
+    header#mainHeader {
+      overflow: hidden;
+      padding: 44px 0px; }
+      header#mainHeader nav {
+        background-color: rgba(112, 94, 65, 0.75);
+        padding: 28px 20px;
+        font-size: 18px;
+        mix-blend-mode: multiply; } }
 
 header#mainHeader.header-background nav {
   background-color: transparent; }
