@@ -23,7 +23,7 @@ section
   background-position: center bottom
 
   @media (max-width: 640px)
-    margin-bottom: -152px
+    margin-bottom: 0
 
   &::before
     background: transparent
@@ -50,7 +50,7 @@ footer.home-footer
 
     @media (max-width: 640px)
 
-      background-position: center calc(100vh - 172px)
+      background-position: center 100vh
 
   &::after
     background: #ffe8d1
@@ -60,6 +60,9 @@ footer.home-footer
     height: 76px
     bottom: 0
     z-index: 1
+    @media (max-width: 640px)
+      height: 141px
+      background: #dfcebe
 
   a
 
@@ -80,14 +83,27 @@ footer.home-footer
       order: 1
 
       a
-        font-size: 16px
+        font-size: 26px
         position: relative
         top: 2px
         padding: 5px 10px
 
         &:hover
           background: #8b5133
-          border-radius: 3px
+          border-radius: 7px
+          padding: 17px 10px
+
+      @media (max-width: 640px)
+        flex-basis: 100%
+        text-align: center
+
+        a
+          font-size: 26px
+
+          svg
+            +size(48px)
+
+
 
 
     .footer-left-links
@@ -105,6 +121,8 @@ footer.home-footer
       flex-wrap: wrap
       flex: inherit
       padding: 0
+      @media (max-width: 640px)
+        width: 100%
       a
         font-size: 12px
         position: relative
@@ -129,7 +147,7 @@ footer.home-footer
             text-shadow: 0 -1px 0 rgb(31, 8, 35)
 
         p
-          margin-bottom: -10px
+          margin-bottom: 0
           text-align: -webkit-center
           font-weight: bold
           letter-spacing: 0.5px
@@ -139,7 +157,39 @@ footer.home-footer
           margin-bottom: 8px
           border-top: solid 1px #bbad9c
           border-bottom: solid 1px #fff2e1
+    .copyright
+      @media (max-width: 640px)
+        width: 100%
 
+        a
+          width: 100%
+          display: flex
+          flex-direction: column
+
+          p
+            font-size: 22px
+            color: #7c6a5a
+
+          &:hover
+            p
+              color: #492174 !important
+
+          .footer-logo-name
+            width: 100%
+            text-align: center
+            flex-wrap: inherit
+            margin: -1px auto 0
+            font-size: 31px
+            align-items: baseline
+            justify-content: center
+            left: 4px
+
+            svg
+              width: auto
+              height: 50px
+              bottom: -2px
+              position: relative
+              left: 4px
 
     form.contact-form
       display: flex
@@ -157,6 +207,7 @@ footer.home-footer
 
       @media (max-width: 640px)
         flex-direction: column
+        font-size: 18px
 
         .form-box:nth-last-of-type(2)
           margin-bottom: 10px
@@ -169,7 +220,13 @@ footer.home-footer
         margin-bottom: 10px
         text-align: center
         color: #fff
+        text-shadow: 0 1px 5px shade(#8b5235, 30%)
         letter-spacing: 3px
+
+        @media (max-width: 640px)
+          font-size: 42px
+          color: #8b5235
+          text-shadow: 0 1px 5px #fff
 
 
       .form-box
@@ -184,6 +241,8 @@ footer.home-footer
           display: flex
           flex: 2
           flex-wrap: wrap
+          @media (max-width: 640px)
+            flex-direction: column
 
 
 
@@ -218,6 +277,9 @@ footer.home-footer
         flex: 1 1 calc(100% - 211px)
         align-items: stretch
 
+        @media (max-width: 640px)
+          flex-basis: auto
+
         label
           display: none
 
@@ -239,6 +301,10 @@ footer.home-footer
         flex-direction: column
         justify-content: flex-end
 
+        @media (max-width: 640px)
+          flex-basis: initial !important
+          height: 50px
+
 
         input[type="submit"]
           width: 100%
@@ -249,6 +315,9 @@ footer.home-footer
           color: #8b5235
           border: 2px solid #b6a18c
           background: #e6c19d
+
+          @media (max-width: 640px)
+            padding: 0 !important
 
           &:hover
             background: #894e33
