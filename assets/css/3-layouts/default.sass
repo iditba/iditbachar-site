@@ -1,0 +1,71 @@
+.container, .hero
+  direction: rtl
+
+.hero
+  .inner-hero
+    .hero-text-container
+      text-align: right
+      border-radius: 4px
+      overflow: hidden
+      //height: auto
+      display: flex
+      flex-wrap: wrap
+      flex-direction: column
+      position: relative
+      border-bottom: 2px solid rgba(253, 253, 253, 0.22)
+      //padding: 10px
+      box-sizing: border-box
+      z-index: 10
+
+
+      &::before
+        z-index: -1
+        position: absolute
+        content: ''
+        height: 100%
+        width: 100%
+        background: rgba(249, 229, 207, 0.67)
+        box-sizing: border-box
+        padding: 10px
+        mix-blend-mode: luminosity
+        filter: blur(37px)
+
+      h1, h2
+        text-shadow: 1px 1px 1px rgb(0, 0, 0)
+        margin: 10px 30px 10px 0
+        color: $green
+
+      p
+        color: #353535
+        font-weight: bold
+        text-shadow: none
+        margin: 10px 30px 10px 0
+
+      .cta
+        a
+          margin: 0 30px 15px 0
+          background: rgba(110, 151, 39, 0.81)
+          mix-blend-mode: color-burn
+          border: solid 2px #5a7d2a
+          font-size: 18px
+          font-weight: bold
+          padding: 10px 35px
+          font-weight: bold
+          letter-spacing: 2px
+
+          &:hover
+            background: shade(rgba(110, 151, 39, 0.81), 30%)
+            color: #fff
+
+
+
+.learn-more
+  bottom: 10px !important
+
+  a
+    background: #816c4c
+    padding: 10px 25px
+    mix-blend-mode: multiply
+    border-top-left-radius: 10px
+    border-top-right-radius: 10px
+    border-bottom: 4px solid rgba(72, 63, 42, 0.78)

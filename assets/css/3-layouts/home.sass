@@ -1,3 +1,14 @@
+.fade
+  direction: ltr !important
+body
+  .content
+    background-image: url(https://dl.dropboxusercontent.com/s/ilbwg0m9tw4cbee/blog-bg2.jpg?dl=0) !important
+    background-size: cover !important
+    background-attachment: fixed !important
+    background-repeat: no-repeat !important
+
+    section
+      background-color: transparent
 section
   &.hero
     background-color: #EFE7F0
@@ -44,13 +55,14 @@ footer.home-footer
     -webkit-filter: blur(3px)
     filter: blur(5px)
     background-size: cover
-    bottom: 0
+    bottom: 50px
     mix-blend-mode: screen
     z-index: 0
 
     @media (max-width: 640px)
 
       background-position: center 100vh
+      bottom: 0
 
   &::after
     background: #ffe8d1
@@ -83,15 +95,18 @@ footer.home-footer
       order: 1
 
       a
-        font-size: 26px
+        font-size: 18px
         position: relative
         top: 2px
-        padding: 5px 10px
+
+        svg
+          +size(33px)
+
 
         &:hover
           background: #8b5133
           border-radius: 7px
-          padding: 17px 10px
+          padding: 10px 10px
 
       @media (max-width: 640px)
         flex-basis: 100%
@@ -99,6 +114,10 @@ footer.home-footer
 
         a
           font-size: 26px
+          padding: 5px 10px
+
+          &:hover
+            padding: 17px 10px
 
           svg
             +size(48px)
@@ -147,7 +166,7 @@ footer.home-footer
             text-shadow: 0 -1px 0 rgb(31, 8, 35)
 
         p
-          margin-bottom: 0
+          margin-bottom: -10px
           text-align: -webkit-center
           font-weight: bold
           letter-spacing: 0.5px
@@ -169,6 +188,7 @@ footer.home-footer
           p
             font-size: 22px
             color: #7c6a5a
+            margin-bottom: 0px
 
           &:hover
             p

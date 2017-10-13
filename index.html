@@ -15,11 +15,16 @@ about-me-text: מטפלת בקלינקה פרטית בשיאצו ובדיקור 
 about-me-picture-name: https://dl.dropboxusercontent.com/s/7sanfhinpgzmh5v/me-650x1300.jpg?dl=0
 about-me-picture-alt-name: IDIT BACHAR
 
+more-info-button: לצפייה בפרטים
+
 clinic-title: הקליניקה
 clinic-sub-title: ממוקמת באיזור שקט ונעים, חניה חופשית. יש להזין טקסט נוסף כאן.
 
 items-title: תוכן הקליניקה
 items-sub-title: תוכן להזנה על הכלים שברשות הקליניקה (או כל דבר אחר שהלקוח חושב שצריך)
+
+final-title: רוצים לדעת עוד?
+final-sub-title: תוכלו להשאיר פרטים בטופס, או להתקשר בשעות היום
 
 bottom_image: https://dl.dropboxusercontent.com/s/ty1t29zfyhid0y4/home-footer.jpg?dl=0
 footer-bg-class: home-footer
@@ -28,15 +33,15 @@ mobile-tel: טלפון - 054-3366333
 mobile-tel-link: tel:0543366333
 ---
 
-<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
+<section class="hero" style="background-image: url({% include relative-src.html src=page.image %}) !important">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
 			<h1 class="editable">{{ page.welcome-title }}</h1>
 			<p class="subtext editable">{{ page.welcome-sub-title }}</p>
-			<div class="cta button alt"><a href="{{ site.baseurl }}/{{ page.welcome-button-link }}">{{ page.welcome-button-name }}</a></div>
+			<div class="cta button alt"><a href="#footer">{{ page.welcome-button-name }}</a></div>
 		</div>
 	</div>
-	<div class="learn-more"><a href="#learn-more">Learn more <span class="arrow">&#x25BC;</span></a></div>
+	<div class="learn-more"><a href="#learn-more">{{ page.more-info-button }} <span class="arrow">&#x25BC;</span></a></div>
 </section>
 
 <div class="content">
@@ -76,12 +81,12 @@ mobile-tel-link: tel:0543366333
 		</div>
 	</section>
 
-	<section class="hero last-hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
+	<section class="hero last-hero" style="background-image: url({% include relative-src.html src=page.bottom_image %}) !important">
 		<div class="inner-hero text-container">
 			<div class="hero-text-container">
-				<h2 class="editable">Find your buddy today</h2>
-				<p class="subtext editable">It's free, fun and an exciting way to meet new people.</p>
-				<div class="cta button alt"><a href="#">Join Now</a></div>
+				<h2 class="editable">{{ page.final-title }}</h2>
+				<p class="subtext editable">{{ page.final-sub-title }}</p>
+				<!-- <div class="cta button alt"><a href="#">Join Now</a></div> -->
 			</div>
 		</div>
 	</section>
