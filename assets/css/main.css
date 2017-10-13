@@ -847,6 +847,20 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
   box-shadow: 0 0 5px #51cbee;
   border: 1px solid #51cbee; }
 
+header#mainHeader {
+  overflow: hidden;
+  padding: 44px 0px; }
+  header#mainHeader .company-name {
+    display: none; }
+  header#mainHeader nav {
+    background-color: rgba(112, 94, 65, 0.75);
+    padding: 28px 20px;
+    font-size: 18px;
+    mix-blend-mode: multiply; }
+
+header#mainHeader.header-background nav {
+  background-color: transparent; }
+
 .container, .hero {
   direction: rtl; }
 
