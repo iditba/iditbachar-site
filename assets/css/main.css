@@ -946,8 +946,19 @@ footer.home-footer {
         top: 2px;
         padding: 5px 10px; }
         footer.home-footer .container .copyright a:hover {
-          background: #8b5133;
-          border-radius: 3px; }
+          background: #863993;
+          border-radius: 3px;
+          text-decoration: none !important;
+          color: #492174 !important;
+          text-decoration: none !important;
+          text-shadow: 0 1px 0 #a347b3; }
+          footer.home-footer .container .copyright a:hover hr {
+            border-top: solid 1px #a347b3;
+            border-bottom: solid 1px #492174; }
+          footer.home-footer .container .copyright a:hover .footer-logo-name {
+            color: #492174 !important;
+            text-decoration: none !important;
+            text-shadow: 0 -1px 0 #1f0823; }
         footer.home-footer .container .copyright a p {
           margin-bottom: -10px;
           text-align: -webkit-center;
