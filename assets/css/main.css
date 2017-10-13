@@ -852,11 +852,12 @@ header#mainHeader {
   padding: 44px 0px; }
   header#mainHeader .company-name {
     display: none; }
-  header#mainHeader nav {
-    background-color: rgba(112, 94, 65, 0.75);
-    padding: 28px 20px;
-    font-size: 18px;
-    mix-blend-mode: multiply; }
+  @media (min-width: 640px) {
+    header#mainHeader nav {
+      background-color: rgba(112, 94, 65, 0.75);
+      padding: 28px 20px;
+      font-size: 18px;
+      mix-blend-mode: multiply; } }
 
 header#mainHeader.header-background nav {
   background-color: transparent; }
