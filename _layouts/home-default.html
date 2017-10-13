@@ -1,14 +1,5 @@
 ---
-mobile-tel: 555
-contact-details:
-  tel: 0543366333
-  address: "הדר 47455, רמת השרון, ישראל"
 
-  map:
-    latitude: 32.1317785
-    longitude: 34.8412175
-    address: "הדר 47455, רמת השרון, ישראל"
-    zoom: 13
 ---
 
 <!DOCTYPE html>
@@ -75,14 +66,14 @@ contact-details:
 							</a>
 						</li>
 					{% endfor %}
-          {% for link in site.data.footer.phone_link %}
+          <!-- {% for link in site.data.footer.phone_link %}
 						<li>
 							<a class="footer-phone-link" {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon | slugify }}-icon"{% endif %}>
 								{{ link.name }}
 							</a>
 						</li>
-					{% endfor %}
-            <!-- <li>{{ page.mobile-tel }}</li> -->
+					{% endfor %} -->
+            <li><a class="footer-phone-link" href="{{ page.mobile-tel-link }}">{{ page.mobile-tel }}</a></li>
 				</ul>
 
 
