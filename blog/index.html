@@ -1,6 +1,11 @@
 ---
 title: Blog
 description: Keep up with the latest news.
+
+welcome-title: ברוכים הבאים לבלוג שלי!
+welcome-sub-title: כאן תוכלו לצפות בעדכונים הכי חדשים בכל הנוגע לקליניקה שלי ועוד...
+
+
 mobile-tel: טלפון - 054-3366333
 mobile-tel-link: tel:0543366333
 image: https://dl.dropboxusercontent.com/s/6ppik0xrxpfvolz/blog-bg.jpg?dl=0
@@ -10,8 +15,8 @@ image: https://dl.dropboxusercontent.com/s/6ppik0xrxpfvolz/blog-bg.jpg?dl=0
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1 class="editable">The latest news</h1>
-			<p class="subtext editable">Hear the latest progress on Frisco and tips on making life long friends.</p>
+			<h1 class="editable">{{ page.welcome-title }}</h1>
+			<p class="subtext editable">{{ page.welcome-sub-title }}</p>
 		</div>
 	</div>
 </section>
