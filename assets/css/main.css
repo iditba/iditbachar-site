@@ -888,8 +888,10 @@ header#mainHeader.header-background nav {
   background-color: transparent; }
 
 @media (max-width: 640px) {
-  header#mainHeader {
+  body.nav-open header#mainHeader {
     padding: 10px 0 5px; }
+  header#mainHeader {
+    padding: 10px 0 65px; }
     header#mainHeader .container {
       display: -ms-flexbox;
       display: flex;
