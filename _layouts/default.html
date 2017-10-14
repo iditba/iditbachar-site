@@ -29,8 +29,8 @@
 			<div class="container">
 				<div class="company-name">
 					<a href="{{ site.baseurl }}/">
-						<span class="dark-logo"><img width="104" height="38" src="{{ site.baseurl }}/assets/img/logo/dark.svg" alt="dark frisco logo"></span>
-						<span class="light-logo"><img width="104" height="38" src="{{ site.baseurl }}/assets/img/logo/light.svg" alt="light frisco logo"></span>
+            <span class="dark-logo"><img width="200" height="193" src="{{ site.baseurl }}/assets/img/logo/pic-logo.png" alt="עידית בכר - רפואה סינית"></span>
+						<span class="light-logo"><img width="200" height="193" src="{{ site.baseurl }}/assets/img/logo/pic-logo.png" alt="עידית בכר - רפואה סינית"></span>
 					</a>
 				</div>
 				{% include navigation.html %}
@@ -40,8 +40,9 @@
 
 		{{ content }}
 
-		<footer class="{{page.footer-bg-class}}">
+    <footer class="{{page.footer-bg-class}}" id="footer">
 			<div class="container">
+
 				<ul class="footer-left-links">
 					{% for link in site.data.footer.left_links %}
 						<li>
@@ -61,12 +62,34 @@
 							</a>
 						</li>
 					{% endfor %}
+
+            <li><a class="footer-phone-link" href="{{ page.mobile-tel-link }}">{{ page.mobile-tel }}</a></li>
 				</ul>
-				<p class="copyright">
-					<a href="http://loragil.com">
-						LORAGIL בנייה ועיצוב
-					</a>
-				</p>
+
+
+
+        <!-- contact-form- -->
+
+        {% include contact-form.html %}
+
+        <!-- contact-form- -->
+
+
+
+        <div class="copyright">
+          <a href="http://loragil.com">
+            <p>בנייה ועיצוב - לא רגיל</p>
+            <hr>
+            <div class="footer-logo-name">
+              {% include icons/loragil-logo.html %}oragil.com
+            </div>
+          </a>
+        </div>
+
+
+
+
+
 			</div>
 		</footer>
 

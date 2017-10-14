@@ -39,13 +39,12 @@ section
   &::before
     background: transparent
 
-footer.home-footer
+footer#footer
   overflow: hidden
   background: rgba(193, 163, 128, 0.55)
   direction: rtl
   box-shadow: inset 0 -53px 0 #333
-
-  &::before
+  &.home-footer::before
     background-image: url(https://dl.dropboxusercontent.com/s/ty1t29zfyhid0y4/home-footer.jpg?dl=0)
     background-position: bottom
     position: absolute
@@ -107,6 +106,10 @@ footer.home-footer
           background: #8b5133
           border-radius: 7px
           padding: 10px 10px
+          color: #fff
+
+          svg
+            fill: #fff
 
       @media (max-width: 640px)
         flex-basis: 100%
