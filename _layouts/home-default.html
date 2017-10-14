@@ -33,8 +33,8 @@
 			<div class="container">
 				<div class="company-name">
 					<a href="{{ site.baseurl }}/">
-						<span class="dark-logo"><img width="104" height="38" src="{{ site.baseurl }}/assets/img/logo/dark.svg" alt="dark frisco logo"></span>
-						<span class="light-logo"><img width="104" height="38" src="{{ site.baseurl }}/assets/img/logo/light.svg" alt="light frisco logo"></span>
+						<span class="dark-logo"><img width="200" height="193" src="{{ site.baseurl }}/assets/img/logo/pic-logo.png" alt="עידית בכר - רפואה סינית"></span>
+						<span class="light-logo"><img width="200" height="193" src="{{ site.baseurl }}/assets/img/logo/pic-logo.png" alt="עידית בכר - רפואה סינית"></span>
 					</a>
 				</div>
 				{% include navigation.html %}
@@ -66,13 +66,7 @@
 							</a>
 						</li>
 					{% endfor %}
-          <!-- {% for link in site.data.footer.phone_link %}
-						<li>
-							<a class="footer-phone-link" {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon | slugify }}-icon"{% endif %}>
-								{{ link.name }}
-							</a>
-						</li>
-					{% endfor %} -->
+
             <li><a class="footer-phone-link" href="{{ page.mobile-tel-link }}">{{ page.mobile-tel }}</a></li>
 				</ul>
 

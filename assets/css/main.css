@@ -849,22 +849,49 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
 
 header#mainHeader {
   padding: 34px 0px 15px; }
-  header#mainHeader .company-name {
-    display: none; }
+  header#mainHeader .company-name img {
+    height: 120px; }
   header#mainHeader nav {
     font-size: 25px; }
+    header#mainHeader nav a {
+      padding: 7px 10px; }
   @media (min-width: 640px) {
     header#mainHeader {
       overflow: hidden;
-      padding: 44px 0px; }
+      padding: 0; }
       header#mainHeader nav {
-        background-color: rgba(112, 94, 65, 0.75);
-        padding: 28px 20px;
+        background-color: #8aac56;
+        padding: 0;
         font-size: 18px;
-        mix-blend-mode: multiply; } }
+        mix-blend-mode: multiply;
+        top: 33px;
+        line-height: 2;
+        position: absolute;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        width: auto;
+        margin-right: -17px; } }
 
 header#mainHeader.header-background nav {
   background-color: transparent; }
+
+@media (max-width: 640px) {
+  header#mainHeader {
+    padding: 10px 0; }
+    header#mainHeader .container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+      header#mainHeader .container > * {
+        -ms-flex: 1 1;
+            flex: 1 1; }
+      header#mainHeader .container nav {
+        margin-top: -50px; } }
 
 .container, .hero {
   direction: rtl; }
