@@ -879,7 +879,7 @@ header#mainHeader.header-background nav {
 
 @media (max-width: 640px) {
   header#mainHeader {
-    padding: 10px 0; }
+    padding: 10px 0 5px; }
     header#mainHeader .container {
       display: -ms-flexbox;
       display: flex;
@@ -891,7 +891,18 @@ header#mainHeader.header-background nav {
         -ms-flex: 1 1;
             flex: 1 1; }
       header#mainHeader .container nav {
-        margin-top: -50px; } }
+        margin-top: -50px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 0; }
+        header#mainHeader .container nav a {
+          -ms-flex: 1 1 35px;
+              flex: 1 1 35px; } }
 
 .container, .hero {
   direction: rtl; }
