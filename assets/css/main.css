@@ -973,7 +973,8 @@ header#mainHeader.header-background nav {
         opacity: 1;
         overflow: initial;
         line-height: 2;
-        padding: 10px; }
+        padding: 10px;
+        -webkit-tap-highlight-color: transparent; }
         header#mainHeader.header-background nav a.nav-toggle:hover {
           background: transparent; }
       header#mainHeader.header-background nav a {
