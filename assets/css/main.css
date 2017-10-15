@@ -908,9 +908,9 @@ header#mainHeader.header-background nav {
       padding: initial;
       border: initial;
       opacity: 1;
-      transition: cubic-bezier(0.86, 0, 0.07, 1);
+      transition: cubic-bezier(0.645, 0.045, 0.355, 1);
       transition-property: line-height, opacity, height;
-      transition-duration: 200ms; }
+      transition-duration: 800ms; }
   header#mainHeader {
     padding: 10px 0 65px; }
     header#mainHeader .container {
@@ -986,7 +986,7 @@ header#mainHeader.header-background nav {
         padding: 0;
         border: none;
         opacity: 0;
-        transition: cubic-bezier(0.86, 0, 0.07, 1);
+        transition: cubic-bezier(0.645, 0.045, 0.355, 1);
         transition-property: line-height, opacity, height;
         transition-duration: 200ms; }
         header#mainHeader.header-background nav a:hover {

@@ -73,9 +73,9 @@ header#mainHeader.header-background
           padding: initial
           border: initial
           opacity: 1
-          @include transition($ease-in-out-quint)
+          @include transition($ease-in-out-cubic)
           @include transition-property(line-height, opacity, height)
-          @include transition-duration(200ms)
+          @include transition-duration(800ms)
 
   header#mainHeader
     padding: 10px 0 65px
@@ -159,7 +159,7 @@ header#mainHeader.header-background
           padding: 0
           border: none
           opacity: 0
-          @include transition($ease-in-out-quint)
+          @include transition($ease-in-out-cubic)
           @include transition-property(line-height, opacity, height)
           @include transition-duration(200ms)
           &:hover
