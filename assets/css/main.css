@@ -937,6 +937,8 @@ header#mainHeader.header-background nav {
           -ms-flex: 1 1 35px;
               flex: 1 1 35px;
           line-height: 2; }
+          header#mainHeader .container nav a.nav-toggle {
+            color: #658d2e; }
   header#mainHeader::before {
     position: absolute;
     content: '';
