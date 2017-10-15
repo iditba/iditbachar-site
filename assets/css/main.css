@@ -884,12 +884,33 @@ header#mainHeader {
           color: #61783c;
           background-color: #b9cd9a; } }
 
+@media (min-width: 640px) {
+  header.header-background .light-logo {
+    display: block !important; }
+  header.header-background .dark-logo {
+    display: none !important; } }
+
 header#mainHeader.header-background nav {
   background-color: transparent; }
 
 @media (max-width: 640px) {
   body.nav-open header#mainHeader {
     padding: 10px 0 5px; }
+    body.nav-open header#mainHeader.header-background::before {
+      top: 0;
+      transition: cubic-bezier(0.86, 0, 0.07, 1);
+      transition-property: top;
+      transition-duration: 3s; }
+    body.nav-open header#mainHeader nav a {
+      line-height: 2;
+      height: 100%;
+      overflow: initial;
+      padding: initial;
+      border: initial;
+      opacity: 1;
+      transition: cubic-bezier(0.86, 0, 0.07, 1);
+      transition-property: line-height, opacity, height;
+      transition-duration: 1s; }
   header#mainHeader {
     padding: 10px 0 65px; }
     header#mainHeader .container {
@@ -915,7 +936,59 @@ header#mainHeader.header-background nav {
         header#mainHeader .container nav a {
           -ms-flex: 1 1 35px;
               flex: 1 1 35px;
-          line-height: 2; } }
+          line-height: 2; }
+  header#mainHeader::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(248, 248, 248, 0.79);
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(204, 204, 204, 0.66);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    top: 0; }
+  header#mainHeader.header-background {
+    padding: 10px 0 0;
+    background-color: transparent;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    box-shadow: 0px 0px 10px transparent; }
+    header#mainHeader.header-background > * {
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+      margin: 0; }
+    header#mainHeader.header-background .company-name .dark-logo img {
+      height: 40px; }
+    header#mainHeader.header-background nav {
+      margin-top: -40px;
+      display: block; }
+      header#mainHeader.header-background nav a.nav-toggle {
+        font-size: 1.3em;
+        opacity: 1;
+        overflow: initial;
+        line-height: 2;
+        padding: 10px; }
+        header#mainHeader.header-background nav a.nav-toggle:hover {
+          background: transparent; }
+      header#mainHeader.header-background nav a {
+        line-height: 0;
+        display: block;
+        line-height: 0;
+        display: block;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+        border: none;
+        opacity: 0;
+        transition: cubic-bezier(0.86, 0, 0.07, 1);
+        transition-property: line-height, opacity, height;
+        transition-duration: 400ms; }
+        header#mainHeader.header-background nav a:hover {
+          background: rgba(207, 199, 186, 0.5); } }
 
 .container, .hero {
   direction: rtl; }
