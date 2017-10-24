@@ -896,6 +896,16 @@ header#mainHeader.header-background nav {
 @media (max-width: 640px) {
   body.nav-open header#mainHeader {
     padding: 10px 0 5px; }
+    body.nav-open header#mainHeader nav a {
+      line-height: 2;
+      height: 100%;
+      overflow: initial;
+      padding: initial;
+      border: initial;
+      opacity: 1;
+      transition: cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition-property: line-height, opacity, height;
+      transition-duration: 800ms; }
     body.nav-open header#mainHeader.header-background::before {
       top: 0;
       transition: cubic-bezier(0.86, 0, 0.07, 1);

@@ -59,6 +59,18 @@ header#mainHeader.header-background
     header#mainHeader
       padding: 10px 0 5px
 
+      nav
+        a
+          line-height: 2
+          height: 100%
+          overflow: initial
+          padding: initial
+          border: initial
+          opacity: 1
+          @include transition($ease-in-out-cubic)
+          @include transition-property(line-height, opacity, height)
+          @include transition-duration(800ms)
+
       &.header-background::before
         top: 0
         @include transition($ease-in-out-quint)
@@ -101,6 +113,7 @@ header#mainHeader.header-background
           line-height: 2
           &.nav-toggle
             color: #658d2e
+
 
   header#mainHeader
     &::before
