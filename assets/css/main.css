@@ -761,6 +761,29 @@ p, address, ul {
   line-height: 1.6em;
   font-family: 'Rubik', sans-serif; }
 
+.bullet {
+  height: 220px;
+  width: 220px;
+  background-image: url(../img/home/bullet.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 20px 50px;
+  box-sizing: border-box; }
+  .bullet > * {
+    font-size: 21px;
+    line-height: 1;
+    margin-top: -20px !important;
+    font-weight: bold;
+    color: #6f513d;
+    text-shadow: 0 1px 0 #f0e5db; }
+
 .staff {
   padding: 0;
   margin: 0;
@@ -1007,7 +1030,7 @@ header#mainHeader.header-background nav {
   direction: rtl; }
 
 .hero .inner-hero .hero-text-container {
-  text-align: right;
+  text-align: center;
   border-radius: 4px;
   overflow: hidden;
   display: -ms-flexbox;
@@ -1077,7 +1100,35 @@ body .content {
     background-color: transparent; }
 
 section.hero {
-  background-color: #EFE7F0; }
+  background-color: #EFE7F0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  section.hero .front-bg {
+    position: absolute;
+    top: 0;
+    -webkit-filter: blur(23px) brightness(135%) opacity(65%);
+            filter: blur(23px) brightness(135%) opacity(65%);
+    width: calc(100vw + 25px);
+    height: calc(100vh + 25px);
+    z-index: 0; }
+  section.hero .inner-hero {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    z-index: 10;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content; }
+  section.hero .learn-more {
+    z-index: 15; }
+    section.hero .learn-more a {
+      opacity: 1;
+      background: #658e2d; }
 
 @media (min-width: 768px) {
   section .flex {
@@ -1094,6 +1145,18 @@ section .flex .home-content-slider {
     text-align: center; }
     section .flex .home-content-slider p img {
       margin: auto; }
+
+.bullets-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
+  margin-top: 20px; }
 
 .hero.last-hero {
   margin-bottom: -190px;

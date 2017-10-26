@@ -12,6 +12,29 @@ body
 section
   &.hero
     background-color: #EFE7F0
+    display: flex
+    align-items: center
+
+    .front-bg
+      position: absolute
+      top: 0
+      filter: blur(23px) brightness(135%) opacity(65%)
+      width: calc(100vw + 25px)
+      height: calc(100vh + 25px)
+      z-index: 0
+
+    .inner-hero
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: center
+      z-index: 10
+      height: fit-content
+
+    .learn-more
+      z-index: 15
+      a
+        opacity: 1
+        background: $green
   .flex
     @media (min-width: 768px)
       flex-wrap: wrap
@@ -27,6 +50,14 @@ section
 
         img
           margin: auto
+
+.bullets-box
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  justify-content: center
+  flex: 1 1 100%
+  margin-top: 20px
 
 .hero.last-hero
   margin-bottom: -190px
