@@ -1134,7 +1134,7 @@ header#mainHeader.header-background nav {
       .hero .inner-hero .hero-text-container h1 {
         font-size: 45px; }
       .hero .inner-hero .hero-text-container p {
-        margin: 0 0 10px 0; } }
+        margin: 0 0 10px 0 !important; } }
   .hero .inner-hero .hero-text-container::before {
     z-index: -1;
     position: absolute;
