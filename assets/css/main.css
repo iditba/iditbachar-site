@@ -862,11 +862,11 @@ ul.bullets-box {
     -ms-flex: 1 1 150px;
         flex: 1 1 150px; }
     .bullet-test:last-child {
-      margin-top: -8px; }
+      margin-top: 0; }
     .bullet-test > * {
       position: relative;
       line-height: 1;
-      margin-top: 80px !important;
+      margin-top: 90px !important;
       margin-bottom: -40px;
       font-size: 26px; }
       .bullet-test > *::before {
