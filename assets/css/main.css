@@ -862,7 +862,7 @@ ul.bullets-box {
     -ms-flex: 1 1 150px;
         flex: 1 1 150px; }
     .bullet-test:last-child {
-      margin-top: -15px; }
+      margin-top: -8px; }
     .bullet-test > * {
       position: relative;
       line-height: 1;
@@ -1246,6 +1246,11 @@ section .flex .home-content-slider {
     text-align: center; }
     section .flex .home-content-slider p img {
       margin: auto; }
+  @media (max-width: 640px) {
+    section .flex .home-content-slider {
+      margin-bottom: -30px; }
+      section .flex .home-content-slider .slick-prev, section .flex .home-content-slider .slick-next {
+        top: calc(100% + 7px); } }
 
 .bullets-box {
   display: -ms-flexbox;
@@ -1265,7 +1270,8 @@ section .flex .home-content-slider {
   background-position: center bottom; }
   @media (max-width: 640px) {
     .hero.last-hero {
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      background-attachment: initial; } }
   .hero.last-hero::before {
     background: transparent; }
 
@@ -1406,7 +1412,7 @@ footer#footer {
           -ms-flex-direction: column;
               flex-direction: column; }
           footer#footer .container .copyright a p {
-            font-size: 22px;
+            font-size: 16px;
             color: #7c6a5a;
             margin-bottom: 0px; }
           footer#footer .container .copyright a:hover p {
@@ -1417,15 +1423,16 @@ footer#footer {
             -ms-flex-wrap: inherit;
                 flex-wrap: inherit;
             margin: -1px auto 0;
-            font-size: 31px;
+            font-size: 22px;
             -ms-flex-align: baseline;
                 align-items: baseline;
             -ms-flex-pack: center;
                 justify-content: center;
-            left: 4px; }
+            left: -6px;
+            position: relative; }
             footer#footer .container .copyright a .footer-logo-name svg {
               width: auto;
-              height: 50px;
+              height: 38px;
               bottom: -2px;
               position: relative;
               left: 4px; } }
