@@ -1130,7 +1130,11 @@ header#mainHeader.header-background nav {
   z-index: 10; }
   @media (max-width: 640px) {
     .hero .inner-hero .hero-text-container {
-      margin-top: -110px; } }
+      margin-top: -90px; }
+      .hero .inner-hero .hero-text-container h1 {
+        font-size: 45px; }
+      .hero .inner-hero .hero-text-container p {
+        margin: 0 0 10px 0; } }
   .hero .inner-hero .hero-text-container::before {
     z-index: -1;
     position: absolute;
