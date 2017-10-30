@@ -16,6 +16,8 @@ section
     align-items: center
     width: 100%
     background-attachment: fixed
+    @media (max-width: 640px)
+      background-attachment: initial
 
     .front-bg
       position: absolute
@@ -25,6 +27,8 @@ section
       height: calc(100vh + 25px)
       z-index: 0
       background-attachment: fixed
+      @media (max-width: 640px)
+        background-attachment: initial
 
     .inner-hero
       flex-direction: row

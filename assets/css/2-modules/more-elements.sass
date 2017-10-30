@@ -99,3 +99,56 @@ ul.bullets-box
 
       &::before
         margin-top: -64px
+
+.bullet-test2
+  list-style: none
+  flex: 0 1 300px
+
+  &>*
+    position: relative
+    font-size: 36px
+    line-height: 3
+    font-weight: bold
+    color: #fff
+    text-shadow: 0 2px 0 #838078, 1px 0px 0 #838078, 0px 3px 8px #100501
+    font-family: 'simpleclm', serif
+    letter-spacing: -1px
+    margin-top: 60px
+    margin-bottom: -20px
+
+
+    &::before
+      position: absolute
+      content: ''
+      background-image: url(../img/home/bullet-mobile-ver03.svg)
+      background-size: 48px
+      background-repeat: no-repeat
+      background-position: center center
+      padding-top: 40px
+      padding-right: 70px
+      padding-bottom: 31px
+      z-index: -1
+      -webkit-filter: drop-shadow(0px 11px 28px #e0ffaf) drop-shadow(0px 11px 18px #e6a332)
+      filter: drop-shadow(0px 11px 28px #e0ffaf) drop-shadow(0px 11px 18px #e6a332)
+      left: calc(50% - 35px)
+      margin-top: -36px
+      box-shadow: inset 0 -5px 1px -4px rgba(249, 248, 248, 0.69)
+
+.bullet-test2
+
+  @media (max-width: 640px)
+    margin: 10px
+    flex: 1 1 150px
+    &:last-child
+      margin-top: 0
+
+
+    &>*
+      position: relative
+      line-height: 1
+      margin-top: 90px !important
+      margin-bottom: -40px
+      font-size: 26px
+
+      &::before
+        margin-top: -64px
