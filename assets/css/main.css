@@ -1127,8 +1127,10 @@ header#mainHeader.header-background nav {
   position: relative;
   border-bottom: 2px solid rgba(253, 253, 253, 0.22);
   box-sizing: border-box;
-  z-index: 10;
-  margin-top: -60px; }
+  z-index: 10; }
+  @media (max-width: 640px) {
+    .hero .inner-hero .hero-text-container {
+      margin-top: -60px; } }
   .hero .inner-hero .hero-text-container::before {
     z-index: -1;
     position: absolute;
