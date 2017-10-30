@@ -821,6 +821,9 @@ p, address, ul {
 ul.bullets-box {
   padding-right: 0;
   padding-left: 0; }
+  @media (max-width: 640px) {
+    ul.bullets-box {
+      margin-top: -30px; } }
 
 .bullet-test {
   list-style: none;
@@ -1139,7 +1142,7 @@ header#mainHeader.header-background nav {
             filter: blur(37px); }
   .hero .inner-hero .hero-text-container h1, .hero .inner-hero .hero-text-container h2 {
     text-shadow: 1px 1px 1px black;
-    margin: 10px 30px 10px 0;
+    margin: 10px 0 10px;
     color: #658e2d; }
   .hero .inner-hero .hero-text-container p {
     color: #353535;
