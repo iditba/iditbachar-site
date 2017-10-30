@@ -78,9 +78,16 @@ mobile-tel-link: tel:0543366333
 				<h2 class="editable">{{ page.clinic-title }}</h2>
 				<p class="editable">{{ page.clinic-sub-title }}</p>
 			</div>
-			<div class="fade home-content-slider">
+			<!-- <div class="fade home-content-slider">
 				{% include home/home-welcome.html %}
+			</div> -->
+
+			<div class="home-content-slider">
+				{% for slider in site.categories.slider-welcome %}
+				{{slider.content}}
+				{% endfor %}
 			</div>
+
 		</div>
 	</section>
 
@@ -90,8 +97,13 @@ mobile-tel-link: tel:0543366333
 				<h2 class="editable">{{ page.items-title }}</h2>
 				<p class="editable">{{ page.items-sub-title }}</p>
 			</div>
-			<div class="fade home-content-slider">
+			<!-- <div class="fade home-content-slider">
 				{% include home/home-clinic-content.html %}
+			</div> -->
+			<div class="home-content-slider long-slider">
+				{% for slider in site.categories.slider-clinic %}
+				{{slider.content}}
+				{% endfor %}
 			</div>
 		</div>
 	</section>
