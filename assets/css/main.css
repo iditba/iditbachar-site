@@ -5,6 +5,7 @@
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Quantico:400,700");
+@import url("https://fonts.googleapis.com/css?family=Suez+One&subset=hebrew");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -365,6 +366,17 @@ textarea {
   /* 1 */
   font: inherit;
   /* 2 */ }
+
+@font-face {
+  font-family: 'simpleclm';
+  src: url("../fonts/simpleclm-bold-webfont.woff") format("woff"), url("../fonts/simpleclm-bold-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'felix007Medium';
+  src: url("../fonts/felix007-medium-webfont.eot");
+  src: url("../fonts/felix007-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/felix007-medium-webfont.woff") format("woff"), url("../fonts/felix007-medium-webfont.ttf") format("truetype"), url("../fonts/felix007-medium-webfont.svg#webfont") format("svg"); }
 
 @-webkit-keyframes MoveUpDown {
   0% {
@@ -774,17 +786,18 @@ p, address, ul {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  padding: 20px 50px;
+  padding: 20px 55px;
   box-sizing: border-box;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .bullet > * {
-    font-size: 21px;
+    font-size: 28px;
     line-height: 1;
     margin-top: -20px !important;
     font-weight: bold;
     color: #6f513d;
-    text-shadow: 0 1px 0 #f0e5db; }
+    text-shadow: 0 1px 0 #f0e5db;
+    font-family: 'felix007Medium', serif; }
   @media (max-width: 640px) {
     .bullet {
       background-image: url(../img/home/bullet-mobile.jpg);
@@ -803,6 +816,50 @@ p, address, ul {
         line-height: 1;
         margin-top: 0 !important;
         margin-bottom: 0; } }
+
+ul.bullets-box {
+  padding-right: 0; }
+
+.bullet-test {
+  list-style: none;
+  -ms-flex: 0 1 300px;
+      flex: 0 1 300px; }
+  .bullet-test > * {
+    position: relative;
+    font-size: 36px;
+    line-height: 3;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 2px 0 #838078, 1px 0px 0 #838078, 0px 3px 8px #100501;
+    font-family: 'simpleclm', serif;
+    letter-spacing: -1px;
+    margin-top: 60px;
+    margin-bottom: -20px; }
+    .bullet-test > *::before {
+      position: absolute;
+      content: '';
+      background-image: url(../img/home/bullet-mobile-ver02.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      padding-top: 40px;
+      padding-right: 40px;
+      padding-bottom: 23px;
+      z-index: -1;
+      -webkit-filter: drop-shadow(0px 11px 28px #e0ffaf) drop-shadow(0px 11px 18px #e6a332);
+              filter: drop-shadow(0px 11px 28px #e0ffaf) drop-shadow(0px 11px 18px #e6a332);
+      left: calc(50% - 20px);
+      margin-top: -40px; }
+  @media (max-width: 640px) {
+    .bullet-test {
+      margin: 10px;
+      -ms-flex: 1 1 160px;
+          flex: 1 1 160px; }
+      .bullet-test > * {
+        position: relative;
+        line-height: 3;
+        margin-top: 60px !important;
+        margin-bottom: -60px; } }
 
 .staff {
   padding: 0;
@@ -965,7 +1022,7 @@ header#mainHeader.header-background nav {
       transition-property: line-height, opacity, height;
       transition-duration: 800ms; }
   header#mainHeader {
-    padding: 10px 0 65px; }
+    padding: 0 0 18px; }
     header#mainHeader .container {
       display: -ms-flexbox;
       display: flex;
@@ -1125,7 +1182,8 @@ section.hero {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  width: 100%; }
+  width: 100%;
+  background-attachment: fixed; }
   section.hero .front-bg {
     position: absolute;
     top: 0;
@@ -1133,7 +1191,8 @@ section.hero {
             filter: blur(23px) brightness(135%) opacity(65%);
     width: calc(100vw + 25px);
     height: calc(100vh + 25px);
-    z-index: 0; }
+    z-index: 0;
+    background-attachment: fixed; }
   section.hero .inner-hero {
     -ms-flex-direction: row;
         flex-direction: row;
@@ -1145,7 +1204,8 @@ section.hero {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    width: 100%; }
+    width: 100%;
+    box-sizing: border-box; }
   section.hero .learn-more {
     z-index: 15; }
     section.hero .learn-more a {
@@ -1241,7 +1301,7 @@ footer#footer {
       -ms-flex-order: 1;
           order: 1; }
       footer#footer .container .footer-right-links a {
-        font-size: 18px;
+        font-size: 27px;
         position: relative;
         top: 2px; }
         footer#footer .container .footer-right-links a svg {
