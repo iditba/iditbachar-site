@@ -44,6 +44,7 @@
 
 ul.bullets-box
   padding-right: 0
+  padding-left: 0
 
 .bullet-test
   list-style: none
@@ -81,11 +82,15 @@ ul.bullets-box
 
   @media (max-width: 640px)
     margin: 10px
-    flex: 1 1 160px
+    flex: 1 1 150px
 
 
     &>*
       position: relative
-      line-height: 3
-      margin-top: 60px !important
-      margin-bottom: -60px
+      line-height: 1
+      margin-top: 90px !important
+      margin-bottom: -40px
+      font-size: 26px
+
+      &::before
+        margin-top: -65px

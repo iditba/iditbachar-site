@@ -819,7 +819,8 @@ p, address, ul {
         font-size: 25px; } }
 
 ul.bullets-box {
-  padding-right: 0; }
+  padding-right: 0;
+  padding-left: 0; }
 
 .bullet-test {
   list-style: none;
@@ -854,13 +855,16 @@ ul.bullets-box {
   @media (max-width: 640px) {
     .bullet-test {
       margin: 10px;
-      -ms-flex: 1 1 160px;
-          flex: 1 1 160px; }
+      -ms-flex: 1 1 150px;
+          flex: 1 1 150px; }
       .bullet-test > * {
         position: relative;
-        line-height: 3;
-        margin-top: 60px !important;
-        margin-bottom: -60px; } }
+        line-height: 1;
+        margin-top: 90px !important;
+        margin-bottom: -40px;
+        font-size: 26px; }
+        .bullet-test > *::before {
+          margin-top: -65px; } }
 
 .staff {
   padding: 0;
