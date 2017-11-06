@@ -1234,6 +1234,10 @@ header#mainHeader.header-background {
     border-top-right-radius: 10px;
     border-bottom: 4px solid rgba(72, 63, 42, 0.78); }
 
+/*search-sass */
+#search-container {
+  padding-top: 200px; }
+
 .fade {
   direction: ltr !important; }
 
@@ -1738,6 +1742,8 @@ header {
     text-shadow: none; }
     header.header-background a {
       color: #333; }
+      header.header-background a .light-logo {
+        display: none !important; }
       @media (min-width: 620px) {
         header.header-background a:hover {
           border-bottom-color: rgba(80, 80, 80, 0.3);

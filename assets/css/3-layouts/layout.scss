@@ -45,11 +45,17 @@ header {
 
 		a {
 			color: #333;
+
+			.light-logo {
+				display: none !important;
+			}
+
 			@media #{$mid-point} {
 				&:hover {
 					border-bottom-color: rgba(80, 80, 80,.3);
 					border-bottom-width: 5px;
 				}
+
 			}
 		}
 

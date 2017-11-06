@@ -37,12 +37,14 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-archives
+  - algoliasearch-jekyll
 
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
   - LICENCE
+  - vendor
 
 collections:
   staff_members:

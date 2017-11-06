@@ -28,5 +28,10 @@
   "bugs": {
     "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues"
   },
-  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync"
+  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync",
+  "dependencies": {
+    "@types/algoliasearch": "^3.24.1",
+    "algoliasearch": "^3.24.5",
+    "simple-jekyll-search": "^1.5.0"
+  }
 }

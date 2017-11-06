@@ -1,9 +1,7 @@
 - name: ראשי
   link: /
-- name: ראשי-טסט
-  link: /index-test
-- name: 2ראשי-טסט
-  link: /index-test2
+- name: search
+  link: /search
 - name: בלוג
   link: /blog/
 - name: צור קשר
