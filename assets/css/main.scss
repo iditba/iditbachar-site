@@ -14,16 +14,18 @@
 @import "1-base/mixins/columns";
 
 @import "2-modules/elements";
+// @import "2-modules/search";
 @import "2-modules/more-elements";
 @import "2-modules/staff";
 
 @import "2-modules/forms";
-
+@import "3-layouts/layout";
 @import "3-layouts/default";
 @import "3-layouts/search";
-@import "3-layouts/home";
+
 @import "3-layouts/landing-page";
-@import "3-layouts/layout";
+
+@import "3-layouts/home";
 @import "3-layouts/contact";
 @import "3-layouts/blog";
 @import "3-layouts/navigation";

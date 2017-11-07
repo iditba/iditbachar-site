@@ -28,6 +28,7 @@ header#mainHeader
       flex-wrap: wrap
       width: auto
       margin-right: -20px
+      transition: 0.2s ease-in-out
 
       a
         background-color: rgb(138, 172, 86)
@@ -45,10 +46,36 @@ header#mainHeader
 
 @media (min-width: 640px)
 
-  header.header-background .light-logo
-    display: block !important
-  header.header-background .dark-logo
-    display: none !important
+  header
+    .company-name img
+      transition: 0.2s ease-in-out
+    a
+      .light-logo
+        opacity: 1
+        transition: 0.4s ease-in-out
+      .dark-logo
+        position: absolute
+        z-index: 10
+        top: -3px
+        opacity: 0
+        transition: 0.2s ease-in-out
+        display: block !important
+
+    &.header-background
+      a
+        .light-logo
+          opacity: 0.2 !important
+          display: block !important
+        .dark-logo
+          opacity: 1
+
+      .company-name img
+        height: 68px !important
+
+      nav
+        top: 15px !important
+        margin-right: -8px !important
+        line-height: 1 !important
 
 header#mainHeader.header-background
   background-color: rgba(255, 255, 255, 0.37)

@@ -1,7 +1,7 @@
 - name: ראשי
   link: /
-- name: search
-  link: /search
+# - name: search
+#   link: /search
 - name: בלוג
   link: /blog/
 - name: צור קשר

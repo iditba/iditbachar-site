@@ -63,84 +63,106 @@ $(document).ready(function(){
 
 
 
-index.setSettings({
-  searchableAttributes: [
-    'brand',
-    'name',
-    'categories',
-    'unordered(description)',
-  ],
-  customRanking: ['desc(popularity)'],
-});
+// index.setSettings({
+//   searchableAttributes: [
+//     'brand',
+//     'name',
+//     'categories',
+//     'unordered(description)',
+//   ],
+//   customRanking: ['desc(popularity)'],
+// });
+//
+//
+// var search = instantsearch({
+//   // Replace with your own values
+//   appId: 'latency',
+//   apiKey: '6be0576ff61c053d5f9a3225e2a90f76', // search only API key, no ADMIN key
+//   indexName: 'instant_search',
+//   urlSync: true
+// });
+//
+// search.addWidget(
+//   instantsearch.widgets.searchBox({
+//     container: '#search-input'
+//   })
+// );
+//
+// search.addWidget(
+//   instantsearch.widgets.hits({
+//     container: '#hits',
+//     hitsPerPage: 10,
+//     templates: {
+//       item: document.getElementById('hit-template').innerHTML,
+//       empty: "We didn't find any results for the search <em>\"{{query}}\"</em>"
+//     }
+//   })
+// );
+//
+// search.addWidget(
+//   instantsearch.widgets.pagination({
+//     container: '#pagination'
+//   })
+// );
+//
+// search.start();
+//
+//
+//
+//
+// // only query string
+// index.search({ query: 'query string' }, function searchDone(err, content) {
+//   if (err) {
+//     console.error(err);
+//     return;
+//   }
+//
+//   for (var h in content.hits) {
+//     console.log(
+//       `Hit(${content.hits[h].objectID}): ${content.hits[h].toString()}`
+//     );
+//   }
+// });
+//
+// // with params
+// index.search(
+//   {
+//     query: 'query string',
+//     attributesToRetrieve: ['firstname', 'lastname'],
+//     hitsPerPage: 50,
+//   },
+//   function searchDone(err, content) {
+//     if (err) {
+//       console.error(err);
+//       return;
+//     }
+//
+//     for (var h in content.hits) {
+//       console.log(
+//         'Hit(' + content.hits[h].objectID + '): ' + content.hits[h].toString()
+//       );
+//     }
+//   }
+// );
+// $(document).ready(function() {
 
+  // Menu Settings
+  // $('.menu-icon, .menu-icon-close').click(function(e) {
+  //   e.preventDefault();
+  //   $('.flex-container').toggleClass('active');
+  // });
 
-var search = instantsearch({
-  // Replace with your own values
-  appId: 'latency',
-  apiKey: '6be0576ff61c053d5f9a3225e2a90f76', // search only API key, no ADMIN key
-  indexName: 'instant_search',
-  urlSync: true
-});
-
-search.addWidget(
-  instantsearch.widgets.searchBox({
-    container: '#search-input'
-  })
-);
-
-search.addWidget(
-  instantsearch.widgets.hits({
-    container: '#hits',
-    hitsPerPage: 10,
-    templates: {
-      item: document.getElementById('hit-template').innerHTML,
-      empty: "We didn't find any results for the search <em>\"{{query}}\"</em>"
-    }
-  })
-);
-
-search.addWidget(
-  instantsearch.widgets.pagination({
-    container: '#pagination'
-  })
-);
-
-search.start();
-
-
-
-
-// only query string
-index.search({ query: 'query string' }, function searchDone(err, content) {
-  if (err) {
-    console.error(err);
-    return;
-  }
-
-  for (var h in content.hits) {
-    console.log(
-      `Hit(${content.hits[h].objectID}): ${content.hits[h].toString()}`
-    );
-  }
-});
-
-// with params
-index.search(
-  {
-    query: 'query string',
-    attributesToRetrieve: ['firstname', 'lastname'],
-    hitsPerPage: 50,
-  },
-  function searchDone(err, content) {
-    if (err) {
-      console.error(err);
-      return;
-    }
-
-    for (var h in content.hits) {
-      console.log(
-        'Hit(' + content.hits[h].objectID + '): ' + content.hits[h].toString()
-      );
-    }
-  }
-);
+  // Search Settings
+//   $('.search-icon').on('click', function(e){
+//     e.preventDefault();
+//     $('.search-box').toggleClass('search-active');
+//
+//     if ($('.search-box').hasClass('search-active')) {
+//       $('.search-icon-close').on('click', function(e){
+//   		e.preventDefault();
+//   		$('.search-box').removeClass('search-active');
+//   	});
+//   }
+//   });
+//
+// });
