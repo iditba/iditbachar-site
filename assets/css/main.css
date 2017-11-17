@@ -862,7 +862,7 @@ ul.bullets-box {
     -ms-flex: 1 1 150px;
         flex: 1 1 150px; }
     .bullet-test:last-child {
-      margin-top: -10px; }
+      margin-top: 0; }
     .bullet-test > * {
       position: relative;
       line-height: 1;
@@ -910,7 +910,7 @@ ul.bullets-box {
     -ms-flex: 1 1 150px;
         flex: 1 1 150px; }
     .bullet-test2:last-child {
-      margin-top: 0; }
+      margin-top: -10px; }
     .bullet-test2 > * {
       position: relative;
       line-height: 1;
