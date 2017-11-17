@@ -58,6 +58,56 @@ $(document).ready(function(){
 // if you are using AMD module loader, algoliasearch will not be defined in window,
 // but in the AMD modules of the page
 
+var client = algoliasearch("KOUQ0R478A", "4511caa62aa31f253ebbbe5f8f72dd6d");
+var index = client.initIndex('idit-site');
+
+
+
+// only query string
+index.search({ query: 'query string' }, function searchDone(err, content) {
+  if (err) {
+    console.error(err);
+    return;
+  }
+
+  for (var h in content.hits) {
+    console.log(
+      `Hit(${content.hits[h].objectID}): ${content.hits[h].toString()}`
+    );
+  }
+});
+
+// with params
+index.search(
+  {
+    query: 'query string',
+    attributesToRetrieve: ['firstname', 'lastname'],
+    hitsPerPage: 50,
+  },
+  function searchDone(err, content) {
+    if (err) {
+      console.error(err);
+      return;
+    }
+
+    for (var h in content.hits) {
+      console.log(
+        'Hit(' + content.hits[h].objectID + '): ' + content.hits[h].toString()
+      );
+    }
+  }
+);
+
+
+
+
+// var algoliasearch = require('algoliasearch');
+// var algoliasearch = require('algoliasearch/reactnative');
+// var algoliasearch = require('algoliasearch/lite');
+// or just use algoliasearch if you are using a <script> tag
+// if you are using AMD module loader, algoliasearch will not be defined in window,
+// but in the AMD modules of the page
+
 // var client = algoliasearch('KOUQ0R478A', '4511caa62aa31f253ebbbe5f8f72dd6d');
 // var index = client.initIndex('idit_NAME');
 

@@ -1371,7 +1371,8 @@ header#mainHeader.header-background {
       margin-top: -75px;
       margin-bottom: 10px; }
       .hero .inner-hero .hero-text-container h1 {
-        font-size: 45px; }
+        font-size: 45px;
+        padding-top: 20px; }
       .hero .inner-hero .hero-text-container p {
         margin: 0 0 10px 0 !important; } }
   .hero .inner-hero .hero-text-container::before {
