@@ -921,7 +921,23 @@ ul.bullets-box {
         margin-bottom: -40px;
         font-size: 26px; }
         ul.bullets-box.test2 .bullet-test2 > *::before {
-          margin-top: -64px; } }
+          margin-top: -64px; }
+  .learn-more {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; }
+    .learn-more a {
+      font-size: 0;
+      padding-top: 8px !important;
+      border-radius: 40% !important;
+      margin-left: 10px;
+      background: #fff !important;
+      padding: 17px 17px !important; }
+      .learn-more a span {
+        font-size: 20px !important;
+        padding-top: 20px;
+        color: #883911; } }
 
 .staff {
   padding: 0;
