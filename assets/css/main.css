@@ -906,7 +906,7 @@ ul.bullets-box {
 
 @media (max-width: 640px) {
   ul.bullets-box.test2 {
-    margin-top: -40px;
+    margin-top: -50px;
     padding: 0 10px; }
     ul.bullets-box.test2 .bullet-test2 {
       margin: 20px 0px 0px;
