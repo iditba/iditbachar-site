@@ -134,21 +134,25 @@ ul.bullets-box
       margin-top: -36px
       box-shadow: inset 0 -5px 1px -4px rgba(249, 248, 248, 0.69)
 
-.bullet-test2
 
+ul.bullets-box.test2
   @media (max-width: 640px)
-    margin: 10px
-    flex: 1 1 150px
-    &:last-child
-      margin-top: -10px
+    margin-top: -40px
+    padding: 0 10px
+
+    .bullet-test2
+      margin: 20px 0px 0px
+      flex: 1 1 150px
+      &:last-child
+        margin-top: -10px
 
 
-    &>*
-      position: relative
-      line-height: 1
-      margin-top: 90px !important
-      margin-bottom: -40px
-      font-size: 26px
+      &>*
+        position: relative
+        line-height: 1
+        margin-top: 90px !important
+        margin-bottom: -40px
+        font-size: 26px
 
-      &::before
-        margin-top: -64px
+        &::before
+          margin-top: -64px
