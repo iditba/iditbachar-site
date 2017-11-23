@@ -173,3 +173,73 @@ ul.bullets-box
         font-size: 20px !important
         padding-top: 20px
         color: $brown2
+
+
+header#mainHeader.header-background
+  #search-nav-container
+    input#search-input
+      height: 33px
+
+    ul#results-container
+      margin-top: 20px
+
+
+#search-nav-container
+  input#search-input
+    height: 51px
+    background: #8aac56
+    border: none
+    margin-right: 2px
+    width: calc(100% - 2px)
+
+  ul#results-container
+    background: rgba(255, 255, 255, 0.73)
+    margin-top: 0
+    list-style-type: none
+    font-size: 17px
+    font-weight: bold
+    padding: 0
+    line-height: 3
+    text-align: center
+    color: shade($brown, 10%)
+    margin-right: 2px
+    border: solid 2px #8aac56
+    border-top: none
+
+    li
+      width: 100%
+      padding: 0
+      background: #f9e9d391
+      display: flex
+      text-align: center
+
+      &:nth-child(odd)
+        background: rgba(255, 255, 255, 0.8)
+
+      &:nth-child(1)
+        background: rgba(255, 255, 255, 1)
+
+      a
+        padding: 0 10px
+        width: 100%
+        line-height: 3
+        background: transparent
+        color: shade($brown, 10%)
+
+        &:hover
+          background: #8aac56
+          color: #fff
+
+@media (max-width: 640px)
+  #search-nav-container
+    display: none
+
+  .nav-open
+    #search-nav-container
+      display: block
+
+      input#search-input
+        height: initial !important
+
+      ul#results-container
+        margin-top: 0px !important

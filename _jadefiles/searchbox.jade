@@ -1,0 +1,12 @@
+// HTML elements for search2
+#search-container
+  input#search-input(type='text', placeholder='search...')
+  ul#results-container
+// script pointing to jekyll-search.js
+script(src='{{ site.baseurl }}/assets/js/simple-jekyll-search.min.js')
+script.
+  SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json'
+  })
