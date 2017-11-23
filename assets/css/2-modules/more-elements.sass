@@ -204,7 +204,8 @@ header#mainHeader.header-background
     color: shade($brown, 10%)
     margin-right: 2px
     border: solid 2px #8aac56
-    border-top: none
+    border-top: none 0px transparent
+    border-bottom: none 0px transparent
 
     li
       width: 100%
@@ -218,6 +219,9 @@ header#mainHeader.header-background
 
       &:nth-child(1)
         background: rgba(255, 255, 255, 1)
+
+      &:last-child
+        border-bottom: solid 2px #8aac56
 
       a
         padding: 0 10px
@@ -240,6 +244,7 @@ header#mainHeader.header-background
 
       input#search-input
         height: initial !important
+        line-height: 1
 
       ul#results-container
         margin-top: 0px !important
