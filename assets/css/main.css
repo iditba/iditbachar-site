@@ -1835,6 +1835,32 @@ section .flex .home-content-slider {
           flex: 1 1 100%;
   margin-top: 20px; }
 
+@media (max-width: 640px) {
+  .image.circle-img {
+    text-align: center;
+    background: #c9c0b9;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    height: 0;
+    padding-bottom: 70%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 70%;
+    margin: auto; }
+    .image.circle-img img {
+      margin-top: -30px; } }
+
 .hero.last-hero {
   margin-bottom: -190px;
   position: relative;
